@@ -28,8 +28,6 @@ To add more languages:
 
 This page can be hosted for free using services like:
 - [GitHub Pages](https://pages.github.com/)
-- [Netlify](https://www.netlify.com/)
-- [Vercel](https://vercel.com/)
 
 ## License
 
