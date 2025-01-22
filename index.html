@@ -1,107 +1,78 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Study</title>
+    <title>Travel Survey</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background: linear-gradient(135deg, #4caf50, #8bc34a);
+            color: white;
+            text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: linear-gradient(to bottom, #a2d9ff, #ffffff);
-            text-align: center;
         }
-
         .container {
+            background: white;
+            color: #333;
+            padding: 30px 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             max-width: 600px;
-            padding: 20px;
-            background: #ffffff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            width: 90%;
         }
-
         h1 {
-            font-size: 2rem;
-            color: #333333;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #4caf50;
         }
-
         p {
-            font-size: 1rem;
-            color: #555555;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
         }
-
         .languages {
             display: flex;
             justify-content: center;
-            gap: 10px;
-            margin: 20px 0;
+            flex-wrap: wrap;
+            gap: 15px;
         }
-
-        .languages button {
-            border: none;
-            background: #007BFF;
+        .languages a {
+            text-decoration: none;
+            font-size: 1.1rem;
             color: white;
-            padding: 10px 20px;
-            font-size: 1rem;
+            background-color: #4caf50;
+            padding: 12px 25px;
             border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
         }
-
-        .languages button:hover {
-            background: #0056b3;
+        .languages a:hover {
+            background-color: #388e3c;
+            transform: translateY(-2px);
         }
-
-        .start-btn {
-            margin-top: 20px;
-            padding: 15px 30px;
-            font-size: 1.2rem;
-            background: #28a745;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .start-btn:hover {
-            background: #1c7430;
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #666;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to Our Travel Study</h1>
-        <p>Select your language and start the survey to help us create unique travel experiences!</p>
-
+        <h1>Welcome to the Travel Survey</h1>
+        <p>Your input helps us create better travel experiences tailored to you. Choose your language to begin:</p>
         <div class="languages">
-            <button onclick="selectLanguage('fr')">Français 🇫🇷</button>
-            <button onclick="selectLanguage('en')">English 🇬🇧</button>
-            <button onclick="selectLanguage('de')">Deutsch 🇩🇪</button>
-            <button onclick="selectLanguage('es')">Español 🇪🇸</button>
+            <a href="https://docs.google.com/forms/d/english_form_id" target="_blank">English 🇬🇧</a>
+            <a href="https://docs.google.com/forms/d/french_form_id" target="_blank">Français 🇫🇷</a>
+            <a href="https://docs.google.com/forms/d/german_form_id" target="_blank">Deutsch 🇩🇪</a>
+            <a href="https://docs.google.com/forms/d/spanish_form_id" target="_blank">Español 🇪🇸</a>
         </div>
-
-        <button class="start-btn" onclick="startSurvey()">Start</button>
+        <footer>&copy; 2025 Travel Survey. All Rights Reserved.</footer>
     </div>
-
-    <script>
-        let selectedLanguage = 'en'; // Default language
-
-        function selectLanguage(language) {
-            selectedLanguage = language;
-            alert(`Language set to: ${language.toUpperCase()}`); // For testing, replace with actual language change logic
-        }
-
-        function startSurvey() {
-            window.location.href = `/survey?lang=${selectedLanguage}`; // Redirect to survey page with selected language
-        }
-
-        // Extendable: Add more language buttons dynamically later
-    </script>
 </body>
 </html>
