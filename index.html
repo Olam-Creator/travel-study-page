@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Survey</title>
     <style>
-        /* Appliquer une image de fond */
+        /* Background image and general styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -16,7 +16,7 @@
             text-align: center;
         }
 
-        /* Conteneur central */
+        /* Main container styling */
         .container {
             background: rgba(0, 0, 0, 0.7);
             color: white;
@@ -28,25 +28,27 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
         }
 
-        /* Titre principal */
+        /* Heading styling */
         h1 {
             font-size: 2.5rem;
             margin-bottom: 20px;
         }
 
-        /* Texte descriptif */
+        /* Description text styling */
         p {
             font-size: 1.2rem;
             margin-bottom: 30px;
         }
 
-        /* Liens pour les langues */
+        /* Language button container */
         .languages {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             gap: 15px;
         }
+
+        /* Language button styling */
         .languages a {
             text-decoration: none;
             font-size: 1.1rem;
@@ -56,12 +58,14 @@
             border-radius: 5px;
             transition: background-color 0.3s, transform 0.3s;
         }
+
+        /* Hover effect on buttons */
         .languages a:hover {
             background-color: #388e3c;
             transform: translateY(-2px);
         }
 
-        /* Pied de page */
+        /* Footer styling */
         footer {
             margin-top: 30px;
             font-size: 0.9rem;
@@ -74,10 +78,11 @@
         <h1>Welcome to the Travel Survey</h1>
         <p>Your feedback helps us design tailored travel experiences and improve our services. Please choose your language to begin:</p>
         <div class="languages">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1cufpNq-AaF3GEcceMthYxDrJfs9aJOq7OUUH5YIPODvJfg/viewform" target="_blank">Français 🇫🇷</a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScRTpntzuiMJPPirCu0zJPPW9gL-QwQhfP59LMSnBxVbI1RRg/viewform?usp=header" target="_blank">English 🇬🇧</a>
-            <a href="#" target="_blank">Deutsch 🇩🇪 <!-- Ajouter le lien ici --></a>
-            <a href="#" target="_blank">Español 🇪🇸 <!-- Ajouter le lien ici --></a>
+            <!-- Buttons for each language -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1cufpNq-AaF3GEcceMthYxDrJfs9aJOq7OUUH5YIPODvJfg/viewform" target="_blank" rel="noopener noreferrer">Français 🇫🇷</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScRTpntzuiMJPPirCu0zJPPW9gL-QwQhfP59LMSnBxVbI1RRg/viewform" target="_blank" rel="noopener noreferrer">English 🇬🇧</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Deutsch 🇩🇪 <!-- Add German form link here --></a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Español 🇪🇸 <!-- Add Spanish form link here --></a>
         </div>
         <footer>&copy; 2025 Travel Survey. All Rights Reserved.</footer>
     </div>
