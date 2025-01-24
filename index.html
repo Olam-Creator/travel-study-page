@@ -37,4 +37,54 @@
         /* Description text styling */
         p {
             font-size: 1.2rem;
-            margin-bottom: 30px
+            margin-bottom: 30px;
+        }
+
+        /* Language button container */
+        .languages {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        /* Language button styling */
+        .languages a {
+            text-decoration: none;
+            font-size: 1.1rem;
+            color: white;
+            background-color: #4caf50;
+            padding: 12px 25px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        /* Hover effect on buttons */
+        .languages a:hover {
+            background-color: #388e3c;
+            transform: translateY(-2px);
+        }
+
+        /* Footer styling */
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Travel Survey</h1>
+        <p>Your feedback helps us design tailored travel experiences and improve our services. Please choose your language to begin:</p>
+        <div class="languages">
+            <!-- Buttons for each language -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1cufpNq-AaF3GEcceMthYxDrJfs9aJOq7OUUH5YIPODvJfg/viewform" target="_blank" rel="noopener noreferrer">Français 🇫🇷</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScRTpntzuiMJPPirCu0zJPPW9gL-QwQhfP59LMSnBxVbI1RRg/viewform" target="_blank" rel="noopener noreferrer">English 🇬🇧</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Deutsch 🇩🇪 <!-- Add German form link here --></a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeS5gfXfUQvk8NKpBojDCASDFwlIJO1vNKolpnf6vK2xDejHw/viewform?usp=header" target="_blank" rel="noopener noreferrer">Español 🇪🇸</a>
+        </div>
+        <footer>&copy; 2025 Travel Survey. All Rights Reserved.</footer>
+    </div>
+</body>
+</html>
